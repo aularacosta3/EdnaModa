@@ -5,14 +5,12 @@ interface CustomButtonProps extends TouchableOpacityProps {
   title: string;
   variant?: 'primary' | 'secondary' | 'danger';
   isLoading?: boolean;
-  Icon?: React.ReactNode;
 }
 
 export const CustomButton = ({
   title,
   variant = 'primary',
   isLoading,
-  icon,
   style,
   ...restProps
 }: CustomButtonProps) => {
@@ -23,10 +21,7 @@ export const CustomButton = ({
       {isLoading ? (
         <ActivityIndicator size="small" />
       ) : (
-        <>
-          {icon}
-          <Text>{title}</Text>
-        </>
+        <Text>{title}</Text>
       )}
     </TouchableOpacity>
   );

@@ -13,7 +13,6 @@ export default function App() {
         initialRouteName="Login"
         screenOptions={{
           headerShown: false,
-          transition: 'fade',
         }}
       >
         <Stack.Screen name="Login" component={LoginScreen} />

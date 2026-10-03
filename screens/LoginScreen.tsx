@@ -27,7 +27,8 @@ export const LoginScreen = () => {
       Alert.alert("Atención", "Por favor ingresa correo y contraseña");
       return;
     }
-    navigation.navigate("Home");
+    // @ts-ignore
+navigation.navigate("Home");
   };
 
   return (
